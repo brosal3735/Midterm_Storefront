@@ -1,1 +1,105 @@
+body {
+  margin: 0;                
+  padding: 0;               
+  background: #f2f2f2;       
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
 
+header {
+  text-align: center;
+  padding: 24px 12px;
+  background: #333;
+  color: #fff;
+}
+
+main {
+  max-width: 960px;          
+  margin: 0 auto;            
+  padding: 20px 16px;       
+}
+
+main section {
+  background: #fff;
+  padding: 20px;            
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+  border-radius: 6px;
+  margin-bottom: 22px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+nav ul {
+  list-style: none;         
+  padding: 0;                
+  margin: 0;               
+  display: flex;             
+  justify-content: center;   
+  gap: 0;                    
+  background: #555;
+}
+
+nav li {
+  margin: 0 15px;            
+}
+
+nav a {
+  display: block;           
+  color: #fff;               
+  background: #333;         
+  padding: 12px 20px;        
+  text-decoration: none;     
+  border-radius: 4px;        /
+  transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+  background: #555;         
+}
+
+#inventory {
+  width: 100%;               
+  border-collapse: collapse; 
+  margin-top: 12px;
+}
+
+#inventory caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+/* Header styling */
+#inventory thead th {
+  background: #444;
+  color: #fff;
+}
+
+#inventory th,
+#inventory td {
+  border: 1px solid #ccc;   
+  padding: 12px;             
+  text-align: left;        
+  vertical-align: top;
+}
+
+/* Footer styling */
+#inventory tfoot td {
+  text-align: center;      
+  font-style: italic;        
+  border-top: 2px solid #ccc;
+}
+
+#inventory col:nth-child(1),
+#inventory col:nth-child(3) {
+  background: #f9f9f9;     
+}
+
+h2 {
+  margin-top: 0;
+}
