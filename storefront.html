@@ -1,1 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>brosal3735| SkyMart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <header>
+    <h1><span class="student-id">StudentID 123456</span> | <span class="store-name">SkyMart</span></h1>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <section>
+      <h2>Welcome to SkyMart</h2>
+      <p>Discover quality gear and everyday essentials at great prices.</p>
+    </section>
+
+    <section id="products">
+      <h2>Featured Products</h2>
+
+      <!-- Task 5: Product table -->
+      <table id="inventory">
+        <caption>Store Inventory</caption>
+
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Eco Water Bottle</th>
+            <td>$19.99</td>
+            <td>Outdoors</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <th scope="row">Wireless Earbuds</th>
+            <td>$59.99</td>
+            <td>Electronics</td>
+            <td>Limited</td>
+          </tr>
+          <tr>
+            <th scope="row">Yoga Mat</th>
+            <td>$24.99</td>
+            <td>Fitness</td>
+            <td>Backorder</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">3 items listed</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:info@skymart.example">info@skymart.example</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SkyMart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
