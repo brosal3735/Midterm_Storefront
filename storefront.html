@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>brosal3735| SkyMart</title>
+  <title>brosal3735 | SkyMart</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- Task 1: Semantic structure -->
   <header>
-    <h1><span class="student-id">StudentID 123456</span> | <span class="store-name">SkyMart</span></h1>
+    <h1><span class="student-id">brosal3735</span> | <span class="store-name">SkyMart</span></h1>
   </header>
 
   <nav aria-label="Primary">
@@ -21,23 +22,25 @@
   </nav>
 
   <main id="home">
-    <section>
-      <h2>Welcome to SkyMart</h2>
+    <section aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome to SkyMart</h2>
       <p>Discover quality gear and everyday essentials at great prices.</p>
     </section>
 
-    <section id="products">
-      <h2>Featured Products</h2>
+    <!-- Product listing section with a descriptive second heading -->
+    <section id="products" aria-labelledby="products-heading">
+      <h2 id="products-heading">Featured Products</h2>
 
       <!-- Task 5: Product table -->
       <table id="inventory">
         <caption>Store Inventory</caption>
 
+        <!-- Define columns; CSS applies color to 1st and 3rd -->
         <colgroup>
-          <col />
-          <col />
-          <col />
-          <col />
+          <col>
+          <col>
+          <col>
+          <col>
         </colgroup>
 
         <thead>
@@ -78,8 +81,8 @@
       </table>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
       <p>Email us at <a href="mailto:info@skymart.example">info@skymart.example</a>.</p>
     </section>
   </main>
