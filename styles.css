@@ -1,11 +1,13 @@
+/* Task 3: Global page styles */
 body {
-  margin: 0;                
-  padding: 0;               
-  background: #f2f2f2;       
+  margin: 0;                 /* remove default margin */
+  padding: 0;                /* remove default padding */
+  background: #f2f2f2;       /* light gray background */
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 24px 12px;
@@ -13,57 +15,63 @@ header {
   color: #fff;
 }
 
+/* Task 3: Main content area constraints */
 main {
-  max-width: 960px;          
-  margin: 0 auto;            
-  padding: 20px 16px;       
+  max-width: 960px;          /* limit width */
+  margin: 0 auto;            /* center horizontally */
+  padding: 20px 16px;        /* breathing room around sections */
 }
 
+/* Task 3: Sections styled as cards */
 main section {
   background: #fff;
-  padding: 20px;            
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+  padding: 20px;             /* required 20px padding */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* light shadow */
   border-radius: 6px;
   margin-bottom: 22px;
 
+  /* Interactivity for visibility (nice, smooth) */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Zoom on hover so each section is clearly its own block */
 main section:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
+/* Task 4: Navigation menu (Flexbox) */
 nav ul {
-  list-style: none;         
-  padding: 0;                
-  margin: 0;               
-  display: flex;             
-  justify-content: center;   
-  gap: 0;                    
+  list-style: none;          /* remove bullets */
+  padding: 0;                /* remove padding */
+  margin: 0;                 /* remove margin */
+  display: flex;             /* horizontal layout */
+  justify-content: center;   /* center items */
   background: #555;
 }
 
 nav li {
-  margin: 0 15px;            
+  margin: 0 15px;            /* 0 top/bottom, 15 left/right */
 }
 
 nav a {
-  display: block;           
-  color: #fff;               
-  background: #333;         
-  padding: 12px 20px;        
-  text-decoration: none;     
-  border-radius: 4px;        /
-  transition: background-color 0.3s ease; 
+  display: block;            /* block for padding area */
+  color: #fff;               /* white text */
+  background: #333;          /* dark background */
+  padding: 12px 20px;        /* 12 vertical, 20 horizontal */
+  text-decoration: none;     /* remove underline */
+  border-radius: 4px;        /* slightly rounded corners */
+  transition: background-color 0.3s ease; /* hover transition */
 }
 
 nav a:hover {
-  background: #555;         
+  background: #555;          /* hover color */
 }
 
+/* Task 5: Table styling */
 #inventory {
-  width: 100%;               
-  border-collapse: collapse; 
+  width: 100%;               /* fill container */
+  border-collapse: collapse; /* remove cell spacing */
   margin-top: 12px;
 }
 
@@ -80,26 +88,29 @@ nav a:hover {
   color: #fff;
 }
 
+/* Cell borders, padding, alignment */
 #inventory th,
 #inventory td {
-  border: 1px solid #ccc;   
-  padding: 12px;             
-  text-align: left;        
+  border: 1px solid #ccc;    /* 1px solid light gray */
+  padding: 12px;             /* 12px padding */
+  text-align: left;          /* left align text */
   vertical-align: top;
 }
 
 /* Footer styling */
 #inventory tfoot td {
-  text-align: center;      
-  font-style: italic;        
-  border-top: 2px solid #ccc;
+  text-align: center;        /* center footer row content */
+  font-style: italic;        /* italic footer */
+  border-top: 2px solid #ccc;/* separation */
 }
 
+/* Apply background color to first and third columns via colgroup/col */
 #inventory col:nth-child(1),
 #inventory col:nth-child(3) {
-  background: #f9f9f9;     
+  background: #f9f9f9;       /* light gray background */
 }
 
+/* Minor typography */
 h2 {
   margin-top: 0;
 }
