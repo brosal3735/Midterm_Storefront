@@ -5,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Layout Styles */
 main {
     max-width: 960px;
     margin: 0 auto;
@@ -17,7 +16,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Styles */
 nav ul {
     display: flex;
     justify-content: center;
